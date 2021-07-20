@@ -22,6 +22,7 @@ object GeneradorDatosDummy extends App {
     .getOrCreate()
 
   createParquetFromData
+  //Test
 
   def createParquetFromData() : Unit = {
     val data = getDataForContractRelationshipLcl()
