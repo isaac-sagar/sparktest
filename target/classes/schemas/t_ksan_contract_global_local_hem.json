@@ -1,0 +1,281 @@
+{
+	"namespace": "comp.ksan",
+	"name": "t_ksan_contract_global_local_hem",
+	"doc": "ksan",
+	"database": "master",
+	"storageZone": "Masterdata",
+	"storageType": "HDFS-Parquet",
+	"physicalPath": "/data/master/ksan/data/t_ksan_contract_global_local_hem",
+	"securityLevel": "L2",
+	"objectVersion": "1.0.0",
+	"type": "record",
+
+	"fields":    [ {
+				"name": "gf_cutoff_date",
+				"type": "date",
+				"legacyName": "gf_cutoff_date",
+				"logicalFormat": "DATE",
+				"format": "yyyy-MM-dd",
+				"deleted": false,
+				"metadata": false,
+				"default": "1900-01-01"
+			}, { 
+				"name": "g_contract_id",
+				"type": "string",
+				"legacyName": "g_contract_id",
+				"logicalFormat": "ALPHANUMERIC(50)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, { 
+				"name": "gf_local_contract_number_id",
+				"type": "string",
+				"legacyName": "gf_local_contract_number_id",
+				"logicalFormat": "ALPHANUMERIC(80)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, { 
+				"name": "g_country_id",
+				"type": "string",
+				"legacyName": "g_country_id",
+				"logicalFormat": "ALPHANUMERIC(2)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, { 
+				"name": "g_entity_id",
+				"type": "string",
+				"legacyName": "g_entity_id",
+				"logicalFormat": "ALPHANUMERIC(6)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, { 
+				"name": "g_local_contract_type",
+				"type": "string",
+				"legacyName": "g_local_contract_type",
+				"logicalFormat": "ALPHANUMERIC(8)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, { 
+				"name": "gf_cust_view_lcl_contract_id",
+				"type": "string",
+				"legacyName": "gf_cust_view_lcl_contract_id",
+				"logicalFormat": "ALPHANUMERIC(80)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, { 
+				"name": "gf_commercial_product_grp_id",
+				"type": ["string", "null"],
+				"legacyName": "gf_commercial_product_grp_id",
+				"logicalFormat": "ALPHANUMERIC(4)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, { 
+				"name": "g_language_id",
+				"type": ["string", "null"],
+				"legacyName": "g_language_id",
+				"logicalFormat": "ALPHANUMERIC(2)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, { 
+				"name": "g_currency_id",
+				"type": ["string", "null"],
+				"legacyName": "g_currency_id",
+				"logicalFormat": "ALPHANUMERIC(3)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, { 
+				"name": "g_product_id",
+				"type": ["string", "null"],
+				"legacyName": "g_product_id",
+				"logicalFormat": "ALPHANUMERIC(16)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, { 
+				"name": "g_contract_purpose_id",
+				"type": ["string", "null"],
+				"legacyName": "g_contract_purpose_id",
+				"logicalFormat": "ALPHANUMERIC(16)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, { 
+				"name": "g_high_lvl_cont_purp_id",
+				"type": ["string", "null"],
+				"legacyName": "g_high_lvl_cont_purp_id",
+				"logicalFormat": "ALPHANUMERIC(16)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, { 
+				"name": "g_ctrct_opern_status_type",
+				"type": ["string", "null"],
+				"legacyName": "g_ctrct_opern_status_type",
+				"logicalFormat": "ALPHANUMERIC(4)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, { 
+				"name": "g_ctrct_opern_substatus_type",
+				"type": ["string", "null"],
+				"legacyName": "g_ctrct_opern_substatus_type",
+				"logicalFormat": "ALPHANUMERIC(8)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, { 
+				"name": "gf_proposal_start_date",
+				"type": ["date", "null"],
+				"legacyName": "gf_proposal_start_date",
+				"logicalFormat": "DATE",
+				"format": "yyyy-MM-dd",
+				"deleted": false,
+				"metadata": false,
+				"default": "1900-01-01"
+			}, { 
+				"name": "gf_proposal_approved_date",
+				"type": ["date", "null"],
+				"legacyName": "gf_proposal_approved_date",
+				"logicalFormat": "DATE",
+				"format": "yyyy-MM-dd",
+				"deleted": false,
+				"metadata": false,
+				"default": "1900-01-01"
+			}, { 
+				"name": "gf_contract_register_date",
+				"type": ["date", "null"],
+				"legacyName": "gf_contract_register_date",
+				"logicalFormat": "DATE",
+				"format": "yyyy-MM-dd",
+				"deleted": false,
+				"metadata": false,
+				"default": "1900-01-01"
+			}, { 
+				"name": "gf_entry_into_force_date",
+				"type": ["date", "null"],
+				"legacyName": "gf_entry_into_force_date",
+				"logicalFormat": "DATE",
+				"format": "yyyy-MM-dd",
+				"deleted": false,
+				"metadata": false,
+				"default": "1900-01-01"
+			}, { 
+				"name": "gf_current_expiration_date",
+				"type": ["date", "null"],
+				"legacyName": "gf_current_expiration_date",
+				"logicalFormat": "DATE",
+				"format": "yyyy-MM-dd",
+				"deleted": false,
+				"metadata": false,
+				"default": "1900-01-01"
+			}, { 
+				"name": "gf_contract_cancel_date",
+				"type": ["date", "null"],
+				"legacyName": "gf_contract_cancel_date",
+				"logicalFormat": "DATE",
+				"format": "yyyy-MM-dd",
+				"deleted": false,
+				"metadata": false,
+				"default": "1900-01-01"
+			}, { 
+				"name": "g_asgn_contract_thpty_type",
+				"type": ["string", "null"],
+				"legacyName": "g_asgn_contract_thpty_type",
+				"logicalFormat": "ALPHANUMERIC(8)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, { 
+				"name": "gf_asgn_contract_thpty_date",
+				"type": ["date", "null"],
+				"legacyName": "gf_asgn_contract_thpty_date",
+				"logicalFormat": "DATE",
+				"format": "yyyy-MM-dd",
+				"deleted": false,
+				"metadata": false,
+				"default": "1900-01-01"
+			}, { 
+				"name": "g_account_register_branch_id",
+				"type": ["string", "null"],
+				"legacyName": "g_account_register_branch_id",
+				"logicalFormat": "ALPHANUMERIC(10)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, { 
+				"name": "g_manager_branch_id",
+				"type": ["string", "null"],
+				"legacyName": "g_manager_branch_id",
+				"logicalFormat": "ALPHANUMERIC(10)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, { 
+				"name": "g_gl_branch_id",
+				"type": ["string", "null"],
+				"legacyName": "g_gl_branch_id",
+				"logicalFormat": "ALPHANUMERIC(10)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, { 
+				"name": "gf_contracting_manager_id",
+				"type": ["string", "null"],
+				"legacyName": "gf_contracting_manager_id",
+				"logicalFormat": "ALPHANUMERIC(8)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, { 
+				"name": "gf_application_id",
+				"type": ["string", "null"],
+				"legacyName": "gf_application_id",
+				"logicalFormat": "ALPHANUMERIC(4)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, { 
+				"name": "gf_audit_operuser_id",
+				"type": ["string", "null"],
+				"legacyName": "gf_audit_operuser_id",
+				"logicalFormat": "ALPHANUMERIC(8)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, { 
+				"name": "gf_operational_audit_date",
+				"type": ["timestamp", "null"],
+				"legacyName": "gf_operational_audit_date",
+				"logicalFormat": "TIMESTAMP",
+				"format": "yyyy-MM-dd HH:mm:ss.SSSSSS",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, { 
+				"name": "gf_user_audit_id",
+				"type": "string",
+				"legacyName": "",
+				"logicalFormat": "ALPHANUMERIC(50)",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}, { 
+				"name": "gf_audit_date",
+				"type": "timestamp",
+				"legacyName": "",
+				"logicalFormat": "TIMESTAMP",
+				"format": "yyyy-MM-dd HH:mm:ss.SSSSSS",
+				"deleted": false,
+				"metadata": false,
+				"default": ""
+			}]
+
+}
