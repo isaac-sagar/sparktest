@@ -40,8 +40,8 @@ object DataGenerator {
       Row(Row("Jen","Mary","Brown"),"Blogging","female",10000)
     )
 
-    val url = ClassLoader.getSystemResource("schemas/person.json")
-    val schemaSource = Source.fromFile(url.getFile).getLines.mkString
+    val url = getClass().getClassLoader().getResourceAsStream("schemas/person.json")
+    val schemaSource = Source.fromInputStream(url).getLines.mkString
     val schemaFromJson = DataType.fromJson(schemaSource).asInstanceOf[StructType]
 
     spark.createDataFrame(spark.sparkContext.parallelize(arrayStructureData),schemaFromJson)
