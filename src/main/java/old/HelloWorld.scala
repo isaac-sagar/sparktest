@@ -1,9 +1,7 @@
-import org.apache.spark.{SparkConf, SparkContext}
+package old
 
-import scala.collection.immutable.HashSet
-import org.apache.spark._
 import org.apache.spark.sql.DataFrame
-import org.apache.spark.sql.functions.{avg, sum}
+import org.apache.spark.{SparkConf, SparkContext}
 
 object HelloWorld extends App {
   val conf = new SparkConf().setMaster(args(0)).setAppName("MyFirstSpark")

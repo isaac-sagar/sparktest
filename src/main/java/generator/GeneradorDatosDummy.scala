@@ -1,10 +1,11 @@
-import org.apache.spark.SparkConf
-import org.apache.spark.sql.types.{StructField, _}
-import org.apache.spark.sql.{Row, SparkSession}
+package generator
 
 import java.sql.{Date, Timestamp}
 import java.text.SimpleDateFormat
-import java.util.UUID
+
+import org.apache.spark.SparkConf
+import org.apache.spark.sql.types._
+import org.apache.spark.sql.{Row, SparkSession}
 
 object GeneradorDatosDummy extends App {
 

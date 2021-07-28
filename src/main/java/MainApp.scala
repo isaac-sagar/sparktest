@@ -4,18 +4,11 @@ import org.apache.spark.sql.types.{IntegerType, StringType, StructField, StructT
 import org.apache.spark.sql.{Row, SparkSession}
 
 object MainApp extends App {
-  //1) Añadir schemas json
-  //2) Generar datos como hacía Dani
-  //TODO: 3) Meterle algunas operaciónes básicas
-  //4) Encapsular en Docker
-  //docker build --tag sparktest:latest .
-  //docker run -d --memory=6g --name sparktesting -p 9080:9080 sparktest:latest
-  //TODO: 5) Añadir Readme.MD
+  //TODO: 1) Montarme un HDFS
+  //TODO: Hacer ejercicios desde aqui
+
 
   val conf = new SparkConf().setMaster("local").setAppName("MyBasicSpark").set("spark.executor.memory", "2g").set("spark.driver.memory", "2g")
-
-  //val sc = new SparkContext(conf)
-  //val sqlContext = new org.apache.spark.sql.SQLContext(sc)
 
   protected implicit lazy val spark = SparkSession
     .builder()
@@ -23,12 +16,20 @@ object MainApp extends App {
     .config(conf)
     .getOrCreate()
 
+  val sqlContext = spark.sqlContext
+
   val jsonDf = createJsonSchemaDF
   jsonDf.printSchema()
   jsonDf.show()
 
-  //val df = createSimpleSchemaDF
-  //df.printSchema()
-  //df.show()
-
 }
+
+//Crear un esquema JSON y cargar algunos datos.
+//val jsonDf = createJsonSchemaDF
+//jsonDf.printSchema()
+//jsonDf.show()
+
+//Crear un esquema a mano y cargar algunos datos.
+//val df = createSimpleSchemaDF
+//df.printSchema()
+//df.show()
