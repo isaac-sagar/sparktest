@@ -23,12 +23,12 @@ object MainApp extends App {
     .config(conf)
     .getOrCreate()
 
-  //val df = createSimpleSchemaDF
-  //df.printSchema()
-  //df.show()
-
   val jsonDf = createJsonSchemaDF
   jsonDf.printSchema()
   jsonDf.show()
+
+  //val df = createSimpleSchemaDF
+  //df.printSchema()
+  //df.show()
 
 }
