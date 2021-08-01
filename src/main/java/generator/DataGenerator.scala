@@ -10,6 +10,16 @@ object DataGenerator {
 
   def createSimpleSchemaDF(implicit spark: SparkSession) = {
 
+    //Crear un esquema JSON y cargar algunos datos.
+    //val jsonDf = createJsonSchemaDF
+    //jsonDf.printSchema()
+    //jsonDf.show()
+
+    //Crear un esquema a mano y cargar algunos datos.
+    //val df = createSimpleSchemaDF
+    //df.printSchema()
+    //df.show()
+
     val simpleData = Seq(Row("James","","Smith","36636","M",3000),
       Row("Michael","Rose","","40288","M",4000),
       Row("Robert","","Williams","42114","M",4000),
